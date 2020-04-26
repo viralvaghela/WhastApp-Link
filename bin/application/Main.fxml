@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="543.0" prefWidth="721.0" style="-fx-background-color: f7f7f7;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <Text fill="#046b62" layoutX="236.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Roboto, sans-serif;" text="WhatsApp link" textAlignment="CENTER" wrappingWidth="245.3367919921875">
+         <font>
+            <Font name="Bell MT Bold" size="29.0" />
+         </font>
+      </Text>
+      <Text fill="#25d366" fontSmoothingType="LCD" layoutX="120.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create direct links to WhatsApp to place on your  Facebook, Twitter or LinkedIn profiles." textAlignment="CENTER" wrappingWidth="477.01007080078125">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <AnchorPane layoutX="6.0" layoutY="122.0" prefHeight="402.0" prefWidth="378.0" style="-fx-background-color: #fff; -fx-border-color: #000;">
+         <children>
+            <JFXTextField fx:id="txtNo" focusColor="#25d366" labelFloat="true" layoutX="10.0" layoutY="51.0" prefHeight="39.0" prefWidth="358.0" promptText="Your Number :" style="-fx-background-color: f7f7f7;" />
+            <JFXTextArea fx:id="txtText" focusColor="#25d366" labelFloat="true" layoutX="10.0" layoutY="129.0" prefHeight="178.0" prefWidth="358.0" promptText="Your Message : " style="-fx-background-color: f7f7f7;" />
+            <JFXButton fx:id="btnGenerate" layoutX="10.0" layoutY="330.0" onAction="#generateLink" prefHeight="39.0" prefWidth="358.0" style="-fx-background-color: #25d366;" text="GENERATE" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="imgqrcode" fitHeight="200.0" fitWidth="200.0" layoutX="453.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true" />
+      <Hyperlink fx:id="hyperlink" layoutX="411.0" layoutY="121.0" prefHeight="58.0" prefWidth="282.0" text="Link : " visible="false" />
+      <JFXButton fx:id="btnShareFb" buttonType="RAISED" layoutX="465.0" layoutY="387.0" onAction="#shareOnFacebook" prefHeight="39.0" prefWidth="183.0" style="-fx-background-color: #3b5998;" text="Facebook" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnShareTwitter" buttonType="RAISED" layoutX="465.0" layoutY="436.0" onAction="#shareOnTwitter" prefHeight="39.0" prefWidth="183.0" style="-fx-background-color: #1da1f2;" text="Twitter" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnShareTwitter1" buttonType="RAISED" layoutX="465.0" layoutY="489.0" onAction="#shareOnLinkedIn" prefHeight="39.0" prefWidth="183.0" style="-fx-background-color: #0077b5;" text="LinkedIn" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

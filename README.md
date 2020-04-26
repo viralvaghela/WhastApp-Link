@@ -1,2 +1,3 @@
-# WhastApp Link
- JavaFx Application to Create direct links to WhatsApp to place on your  Facebook, Twitter or LinkedIn profiles.
+# Whatsapp Direct Link Creator JavaFx Application
+
+![Whatsapp Link](./Capture.PNG)
